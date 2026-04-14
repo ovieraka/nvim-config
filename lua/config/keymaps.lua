@@ -4,7 +4,7 @@
 
 vim.keymap.set("v", "<leader>wc", function()
   local selected = vim.fn.getreg("v")
-  vim.cmd('normal! "vy')
+  vim.cmd('normal! "vd')
 
   vim.api.nvim_put({
     "Container(",
@@ -15,7 +15,7 @@ end, { desc = "Wrap with Container" })
 
 vim.keymap.set("v", "<leader>wp", function()
   local selected = vim.fn.getreg("v")
-  vim.cmd('normal! "vy')
+  vim.cmd('normal! "vd')
 
   vim.api.nvim_put({
     "Padding(",
@@ -26,7 +26,7 @@ end, { desc = "Wrap with Padding" })
 
 vim.keymap.set("v", "<leader>wr", function()
   local selected = vim.fn.getreg("v")
-  vim.cmd('normal! "vy')
+  vim.cmd('normal! "vd')
 
   vim.api.nvim_put({
     "Row(\n children: [" .. selected .. "],\n)",
@@ -35,7 +35,7 @@ end, { desc = "Wrap with Row" })
 
 vim.keymap.set("v", "<leader>wl", function()
   local selected = vim.fn.getreg("v")
-  vim.cmd('normal! "vy')
+  vim.cmd('normal! "vd')
 
   vim.api.nvim_put({
     " Column(\n children: [" .. selected .. "],\n)",
